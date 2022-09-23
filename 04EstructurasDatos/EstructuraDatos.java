@@ -49,6 +49,36 @@ class EstructuraDatos {
             //obtener la respuesta del usuario
             opcion = entrada.nextInt();
 
+            //menu
+            switch(opcion){
+                case 1:
+                    break;
+                case 2:
+                    //convertir numero a binario
+                    System.out.println("Ingrese un numero positivo entero que desee convertir a binario");
+                    numbinario = entrada.nextInt();
+
+                    //tenemos que saber si es positivo
+                    if(numbinario > 0){
+                        //realizar el algotimo con el mod 2 
+                        while(numbinario > 0){
+                            if(numbinario%2 == 0){
+                                binario ="0" + binario;
+                            }else{
+                                binario ="1" + binario;
+                            }
+                            numbinario = (int)numbinario/2;
+                        }
+                    }else if(numbinario == 0){
+                        binario = "0";
+                    }else{
+                        binario = "No se pudo convertir el numero, ingrese solo positivos";
+                    }
+                    System.out.println("El numero convertido a binario es: " + binario);
+                    break;
+                case 3:
+            }
+
 
 
         }while(false);
