@@ -77,11 +77,26 @@ class EstructuraDatos {
                     System.out.println("El numero convertido a binario es: " + binario);
                     break;
                 case 3:
+                    break;
+                case 4:
+                    break;    
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    for(int n = 1; n<=10; n++){
+                        System.out.println(n + " " +(n*10) + " " + (n*100) + " " +(n*1000) );
+                    }
+                    break;
             }
 
+            System.out.println("Deseas repetir el programa, escribe s para si");
+            letra = entrada.next().charAt(0);
 
 
-        }while(false);
+
+        }while(letra == 's' || letra == 'S' );
 
     }
     
