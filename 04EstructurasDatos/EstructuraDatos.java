@@ -24,8 +24,10 @@ class EstructuraDatos {
         Scanner entrada = new Scanner(System.in);
 
         //aqui van a ir las variables
-        int opcion, numbinario;
+        int opcion, numbinario, total, cantidadprod, nl;
         char letra;
+        float precio, resultado=0, compra=0;
+        String nombreprod;
         String binario = "";
 
         do{
@@ -81,6 +83,23 @@ class EstructuraDatos {
                 case 4:
                     break;    
                 case 5:
+                System.out.println("Bienvenido a la Tiendita Kawaii");
+                System.out.println("Por favor Ingrese ¿cuantos elementos va a comprar?");
+                total = entrada.nextInt();
+
+                for(int i = 1; i <= total; i++){
+                    System.out.println("Ingresa el nombre del producto");
+                    nombreprod = entrada.next();
+                    System.out.println("Ingresa el nombre el precio");
+                    precio = entrada.nextFloat();
+                    System.out.println("Ingresa la cantidad");
+                    cantidadprod = entrada.nextInt();
+                    resultado = precio * cantidadprod;
+                    compra = compra + resultado;
+                }
+                
+                System.out.println("El resultado de la compra es: " + compra);
+
                     break;
                 case 6:
                     break;
@@ -89,6 +108,27 @@ class EstructuraDatos {
                         System.out.println(n + " " +(n*10) + " " + (n*100) + " " +(n*1000) );
                     }
                     break;
+                case 8:
+                    break;
+                case 9:
+                System.out.println("Cuadrado magico kawaii");
+                System.out.println("Ingrese el tamaño del cuadrado");
+                nl = entrada.nextInt();
+
+                if(nl >= 1 && nl <=20){
+                    //que lo imprima
+                    for(int i = 1; i <= nl; i++ ){
+                        //imprimir filas
+                        for(int j = 1; j <= nl; j++){
+                            System.out.print("* ");
+                        }
+                        System.out.println("");
+                    }
+                }else{
+                    System.out.println("Ingrese solo numeros entre el 1 y 20");
+                }
+                    break;
+            
             }
 
             System.out.println("Deseas repetir el programa, escribe s para si");
