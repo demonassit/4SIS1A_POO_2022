@@ -77,21 +77,22 @@ public class Figura {
         switch(opcion){
             case 1:
                
-                    try{
-                        System.out.println("Ingresa la base del triangulo: ");
                     
+                        System.out.println("Ingresa la base del triangulo: ");
+                        try{
                         base = entrada.nextDouble();
+                         }catch(Exception e){
+                        System.out.println("Ingrese unicamente valores numericos");
+                        System.out.println("Error: " + e.getMessage());
+                        System.out.println(e.getStackTrace()); //obtiene la raiz del problema
+
+                        }
                         System.out.println("Ingrese la altura del triangulo: ");
                         altura = entrada.nextDouble();
                         area = (base*altura)/2;
                         System.out.println("El area del triangulo es: " + area);
 
-                    }catch(Exception e){
-                        System.out.println("Ingrese unicamente valores numericos");
-                        System.out.println("Error: " + e.getMessage());
-                        System.out.println(e.getStackTrace()); //obtiene la raiz del problema
-
-                    }
+                    
                 
                 break;
             case 2:

@@ -30,6 +30,44 @@ public class cadena {
 
         System.out.println("Segunda parte:" + s1.substring(7 , 20));
 
+        //convertir una variable de la cadena
+
+        int valor = 24;
+
+        String s3 = String.valueOf(valor);
+
+        System.out.println("El valor es de : " + s3 + " como cadena");
+
+        /**
+         *  2 + 2 = 22   cadena
+         * 2 + 2 = 4 int
+         */
+
+         //de cadena a numero
+        String s4 = "20";
+
+        int numero = Integer.parseInt(s4);
+
+        System.out.println("El valor de: " +numero + " ahora es un numero");
+
+        String s5 = "20.89";
+
+        Double numero1 = Double.parseDouble(s5);
+        
+        System.out.println("El valor de: " +numero1 + " ahora es un decimal");
+
+        numero1 = numero1 + numero;
+
+        System.out.println("El resultado es: " + numero1);
+
+        //convertir de otra forma entero a una cadena
+        Integer x = 5;
+        
+        System.out.println("El valor de: " + x.toString() + "ahora es una cadena");
+
+        System.out.println("El valor de: "+ Integer.toString(12) + "ahora es una cadena");
+
+
 
 
     }
