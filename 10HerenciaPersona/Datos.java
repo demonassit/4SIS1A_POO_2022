@@ -57,6 +57,15 @@ public class Datos {
 
     public void mostrarEstudiante(){
         //necesitamos usar los get de cada uno de los datos
+        //necesito recorrer el arreglo
+        for(int i = 0; i < x; i++){
+            //visualizar
+            JOptionPane.showMessageDialog(null, 
+            "La boleta del estudiante es: " + obj[i].getNumBoleta() + "\n"+
+            "El nombre del estudiante es: " + obj[i].getNombre() + "\n"+
+            "La edad del estudiante es: " + obj[i].getEdad() + "\n"+
+            "El genero del estudiante es: " + obj[i].getGenero() + "\n");
+        }
     }
     
 }
