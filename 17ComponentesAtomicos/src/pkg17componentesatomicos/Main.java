@@ -23,6 +23,8 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ComponenteAtomico ventana = new ComponenteAtomico();
+        ventana.setVisible(true);
     }
     
 }
